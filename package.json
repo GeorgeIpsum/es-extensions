@@ -1,0 +1,19 @@
+{
+  "name": "es-extensions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsup ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ibrahim Saberi",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.0.1"
+  },
+  "dependencies": {
+    "typescript": "^5.3.3"
+  }
+}

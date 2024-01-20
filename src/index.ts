@@ -51,7 +51,11 @@ declare global {
     /**
      * Returns an object with keys representing groups of the initial array. The group keys are determined by the supplied `callbackfn`.
      *
+     *
      * @param callbackfn callbackfn is run on each element of the array to determine the grouping key for each element
+     *
+     * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy
+     * @link https://tc39.es/proposal-array-grouping/#sec-object.groupby
      */
     group<U extends string>(callbackfn: (value: T, index: number) => U): Record<U, T[]>;
   }
@@ -60,8 +64,12 @@ declare global {
     /**
      * Returns an object with keys representing groups of the initial array. The group keys are determined by the supplied `callbackfn`.
      *
+     *
      * @param array the array to run the groupBy function on
      * @param callbackfn callbackfn is run on each element of the array to determine the grouping key for each element
+     *
+     * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy
+     * @link https://tc39.es/proposal-array-grouping/#sec-object.groupby
      */
     groupBy<T extends object, U extends string>(
       array: T[],

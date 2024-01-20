@@ -1,8 +1,21 @@
 {
   "name": "es-extensions",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
+  "description": "Common useful-ish extensions to ES prototypes",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,9 +24,7 @@
   "author": "Ibrahim Saberi",
   "license": "MIT",
   "devDependencies": {
-    "tsup": "^8.0.1"
-  },
-  "dependencies": {
+    "tsup": "^8.0.1",
     "typescript": "^5.3.3"
   }
 }
